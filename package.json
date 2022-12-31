@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir dist && cp -R server.js package.json package-lock.json dist",
-    "rb": "rmdir /Q /S dist && mkdir dist && cp -R src app.js .env package.json package-lock.json dist"
+    "build": "mkdir dist && cp -R controller.js koneksi.js res.js routes.js server.js package.json package-lock.json dist",
+    "rb": "rmdir /Q /S dist && mkdir dist && cp -R controller.js koneksi.js res.js routes.js server.js package.json package-lock.json dist"
   },
   "author": "pucukidea",
   "license": "ISC",
