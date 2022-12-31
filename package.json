@@ -4,10 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir dist && cp -R controller.js koneksi.js res.js routes.js server.js package.json package-lock.json dist",
-    "rb": "rmdir /Q /S dist && mkdir dist && cp -R controller.js koneksi.js res.js routes.js server.js package.json package-lock.json dist"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
   "author": "pucukidea",
   "license": "ISC",
   "dependencies": {
