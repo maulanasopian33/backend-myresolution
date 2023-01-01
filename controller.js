@@ -26,10 +26,10 @@ exports.insertData = (req,res) =>{
     let id      = req.body.id;
     let nama    = req.body.nama;
     let resolusi= req.body.resolusi;
-    let tanggal = req.body.tanggal
+    let tanggal = req.body.tahun;
 
     connection.query('INSERT INTO data (id,nama,resolusi,tahun) VALUES(?,?,?,?)',[id,nama,resolusi,tanggal], (error,rows,filed)=>{
-        if(error) console.log(error);
+        if(error) response.gagal(error);
         response.ok("Berhasil menambahkan data",res)
     })
 }
