@@ -28,7 +28,7 @@ exports.insertData = (req,res) =>{
     let resolusi= req.body.resolusi;
     let tanggal = req.body.tanggal
 
-    connection.query('INSERT INTO data (id,nama,resolusi,tanggal) VALUES(?,?,?,?)',[id,nama,resolusi,tanggal], (error,rows,filed)=>{
+    connection.query('INSERT INTO data (id,nama,resolusi,tahun) VALUES(?,?,?,?)',[id,nama,resolusi,tanggal], (error,rows,filed)=>{
         if(error) console.log(error);
         response.ok("Berhasil menambahkan data",res)
     })
